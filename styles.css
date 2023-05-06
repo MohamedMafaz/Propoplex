@@ -317,6 +317,6 @@ input {
   font-size: 13px;
 }
 
-input.selected {
+input:focus {
   box-shadow: 4px 4px 23px rgba(146, 139, 139, 0.25);
 }
