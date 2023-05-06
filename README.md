@@ -1,5 +1,5 @@
 # Propoplex
-Propoplex is an AI-powered platform that helps freelancers write compelling and optimized proposals for popular freelancing sites, and manage and track their success. With customizable templates and proposal management tools, Propoplex makes it easy to impress clients and win more business. We are open for Contributions!
+Introducing Propoplex. Propoplex is an AI-powered platform that helps freelancers write compelling and optimized proposals for popular freelancing sites, and manage and track their success. With customizable templates and proposal management tools, Propoplex makes it easy to impress clients and win more business. We are open for Contributions!
 # Guidelines for Contributors
 Propoplex is an open-source project, and we welcome contributions from the community. However, in order to maintain a healthy and productive environment, we ask all contributors to follow these guidelines:
 
