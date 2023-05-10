@@ -18,19 +18,17 @@ function selectCard(button) {
   button.innerHTML = "Selected";
 }
 
+// Code for the form needs to be same as selected card
+function selectCard(button) {
+  var value = button.value;
+  var formA = document.getElementById("upwork");
+  var formB = document.getElementById("fiverr");
 
-//note I removed this function and added the focus selector to the input in the css
-
-// Selecting the Input field
-// function selectCard(card) {
-//   // Remove "selected" class from all cards except the clicked one
-//   let cards = document.querySelectorAll('input');
-//   cards.forEach(function(c) {
-//     if (c !== card && c.classList.contains('selected')) {
-//       c.classList.remove('selected');
-//     }
-//   });
-
-//   // Add "selected" class to clicked card
-//   card.classList.add('selected');
-// }
+  if (value === "1") {
+    formA.classList.remove("form");
+    formB.classList.add("form");
+  } else if (value === "2") {
+    formA.classList.add("form");
+    formB.classList.remove("form");
+  }
+}
