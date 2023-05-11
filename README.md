@@ -14,6 +14,11 @@ Propoplex is an open-source project, and we welcome contributions from the commu
 - By following these guidelines, we hope to maintain a positive and productive environment for all contributors to the Propoplex project.
 
 # Guidelines for New Page Developers
+**Code for Favicon**
+
+<link rel="icon" href="Images/Favicon.svg" type="image/x-icon" />
+
+
 When you creating a new page for Propoplex, You must need to add Navbar with given code
 **HTML**
 '''<nav>
