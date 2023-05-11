@@ -203,6 +203,8 @@ li {
 
 .home {
   margin-top: 20px;
+  background-color: #F5F5F5;
+  border-radius: 7px;
 }
 
 .navbar i {
