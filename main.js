@@ -23,12 +23,21 @@ function selectCard(button) {
   var value = button.value;
   var formA = document.getElementById("upwork");
   var formB = document.getElementById("fiverr");
+  var formC = document.getElementById("resume");
 
   if (value === "1") {
     formA.classList.remove("form");
     formB.classList.add("form");
+    formC.classList.add("form");
   } else if (value === "2") {
     formA.classList.add("form");
     formB.classList.remove("form");
+    formC.classList.add("form");
+  } else if (value === "3") {
+    formA.classList.add("form");
+    formB.classList.add("form");
+    formC.classList.remove("form");
   }
 }
+
+
