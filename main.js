@@ -1,4 +1,4 @@
-// Selecting the Cards
+// Summa
 function selectCard(button) {
   let card = button.parentNode;
   // Remove "selected" class from all cards except the clicked one and change button text to "USE NOW"
