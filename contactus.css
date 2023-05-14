@@ -109,10 +109,10 @@ form {
   background: linear-gradient(
     135deg,
     var(--primary),
-    #c2c2c2,
+    #FFEBEB,
     var(--primary-alt)
   );
-  border: 1px solid #ffffff;
+  border: 1px solid #FFF3E2;
   border-radius: 25px;
   margin: 75px;
   padding: 40px;
