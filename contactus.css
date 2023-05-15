@@ -79,11 +79,13 @@ button {
 /* Contact Us Section */
 #contact-container {
   padding: 160px 40px 80px;
-  width: 100%;
-
+  max-width: 100%;
+  margin-left: 20%;
+  overflow-x: hidden;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: nowrap;
+  
+ 
 }
 
 .image-container {
