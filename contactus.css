@@ -59,7 +59,8 @@ button {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   color: var(--on-accent);
   cursor: pointer;
-  font-size: 15px;
+  font-size: 11px;
+  font-weight: bolder;
   padding: 10px 32px;
 }
 .send-button {
@@ -102,7 +103,7 @@ button {
 /* Form Container */
 .form-container {
   position: relative;
-  width: 60%;
+  width: 100%;
   max-width: 800px;
 }
 
