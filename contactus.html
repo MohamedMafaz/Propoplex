@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us - Fodome</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Custom Style Sheet -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="contactus.css" />
+  </head>
+
+  <body>
+
+      <!--form to send email-->
+      <section id="contact-container">
+          <div class="image-container">
+              <img src="Images/people.svg" alt="3 businessmen with neckties" />
+          </div>
+          <div class="form-container">
+              <img class="form-image envelope"
+                   src="Images/envelope.svg"
+                   alt="open envelope with letter inside" />
+              <img class="form-image phonebook"
+                   src="Images/phonebook.svg"
+                   alt="phone book" />
+              <form id="form">
+                  <div class="form-group">
+                      <label hidden for="name">name</label>
+                      <div class="form-group-prepend">
+                          <img class="form-icon"
+                               src="Images/icons/user.svg"
+                               alt="user icon" />
+                      </div>
+                      <input type="text" name="name" id="name" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                      <label hidden for="email">email</label>
+                      <div class="form-group-prepend">
+                          <img class="form-icon"
+                               src="Images/icons/envelope.svg"
+                               alt="envelope icon" />
+                      </div>
+                      <input type="text" name="email" id="email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                      <label hidden for="subject">subject</label>
+                      <div class="form-group-prepend">
+                          <img class="form-icon"
+                               src="Images/icons/pen-nib.svg"
+                               alt="pen nib icon" />
+                      </div>
+                      <input type="text" name="subject" id="subject" placeholder="Subject">
+                  </div>
+                  <div class="form-group">
+                      <label hidden for="message">message</label>
+                      <div class="form-group-prepend">
+                          <img class="form-icon"
+                               src="Images/icons/bars.svg"
+                               alt="bars icon" />
+                      </div>
+                      <textarea name="message"
+                                id="message"
+                                placeholder="Message"
+                                rows="5"
+                                style="resize: none"></textarea>
+                  </div>
+                  <input type="submit" class="send-button" id="button" value="SEND">
+              </form>
+          </div>
+      </section>
+      <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+          emailjs.init('xH-NE2pVqNw2nI25u')
+      </script>
+      <script src="contactus.js"></script>
+
+      <!-- <section class="app-section">
+      <div class="app-content">
+        <h2 style="margin-left: 80px">
+          Get the <span style="color: #f54749">Fodome</span> <br />App Now
+        </h2>
+        <p class="app-description" style="margin-left: 80px">
+          Unlock the full potential of our service by <br />
+          downloading our app on your phone. Simply <br />
+          click the link we send you to get started.
+        </p>
+        <form class="app-form" action="#" style="margin-left: 80px">
+          <div class="form-group" style="width: 400px; height: 40px">
+            <i
+              style="margin-left: 20px; color: #f54749"
+              class="fa fa-envelope icon"
+            ></i>
+            <input
+              style="text-align: center"
+              type="email"
+              placeholder="Enter Your Email Address"
+            />
+            <button
+              type="submit"
+              style="
+                color: #fff;
+                background-color: #f54749;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              SUBMIT
+            </button>
+          </div>
+        </form>
+        <p class="app-text" style="margin-left: 80px">Download App From</p>
+        <img
+          src="Images/Get It On.png"
+          style="
+            width: 425px;
+            height: 130px;
+            margin-left: 70px;
+            margin-top: -50px;
+          "
+        />
+      </div>
+      <div class="app-image">
+        <img
+          src="Images/Mobile Mockup.png"
+          alt="App Image"
+          style="width: 367px; height: 638px; margin-top: -50px"
+        />
+      </div>
+    </section>
+    <section class="faq">
+      <h2 class="faq-title">Questions? Look Here</h2>
+      <p
+        style="
+          margin-top: -30px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px; /* identical to box height */
+          color: #000000;
+        "
+      >
+        Can’t find an Answer? Email us on prmafaz2006@gmail.com
+      </p>
+      <div class="faq-line"></div>
+    </section> -->
+      <!-- <section class="faq-section"> -->
+      <!-- search FAQ for keywords -->
+      <!-- <div class="search-container">
+        <form id="search-form">
+          <i
+            style="margin-left: 20px; color: #f54749"
+            class="fa fa-search icon"
+          ></i>
+          <input id="search-input" type="text" placeholder="Search FAQ..." />
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">What is Fodome?</div>
+          <div class="faq-answer">
+            Fodome is a food delivery service that connects you with your
+            favorite restaurants and delivers food right to your doorstep.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How does Fodome work?</div>
+          <div class="faq-answer">
+            To use Fodome, simply download our app or visit our website, create
+            an account, select the restaurant and food items you want to order,
+            and checkout. Our delivery partners will then deliver your food to
+            you as soon as possible.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How much does Fodome cost?</div>
+          <div class="faq-answer">
+            Fodome charges a small fee for delivery, which varies depending on
+            your location and the restaurant you order from.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I cancel my order?</div>
+          <div class="faq-answer">
+            If you need to cancel your order, please contact our customer
+            support team as soon as possible.
+          </div>
+        </div>
+      </div>
+    </section> -->
+      <!-- <script src="main.js"></script> -->
+  </body>
+</html>

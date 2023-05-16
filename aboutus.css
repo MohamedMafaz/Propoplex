@@ -1,0 +1,167 @@
+ /*Define the Font Awesome font family */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+  
+        /* Use the Font Awesome font family for the icon */
+.icon {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-style: normal;
+  margin-right: 10px;
+  color: #7B7B7B;
+ 
+}
+body{
+  background-color: #F5F4F7;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 223px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
+  }
+
+  /* Set the style for the links inside the navbar */
+  .navbar a {
+    display: block;
+    color: #7b7b7b;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+  }
+
+  /* Change the color of the link when it's hovered over */
+  .navbar a:hover {
+    background: #F5F5F5;
+    border-radius: 7px;
+  }
+
+  /* Set the style for the content that appears next to the navbar */
+  .content {
+    margin-left: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.premium_button {
+    width: 167.48px;
+    height: 42px;
+    background: linear-gradient(265.55deg, #3EC1C7 19.07%, #18939C 101.72%);
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    display: block; 
+    margin: auto;
+    margin-top: 20px; 
+    margin-left: 20px;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #16666C;
+    margin-left: 350px; 
+    display: inline-block;
+    
+}
+
+.nav-link.active {
+    background-color: #7b7b7b;
+    color: #000000;
+  }
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar i {
+    margin-right: 10px;
+  }
+
+.title {
+    font-family: 'Poppins';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #16666C;
+    margin-left: 300px; 
+    display: inline-block;   
+}
+
+.propoplex {
+    color: #18939C; 
+    display: inline-block;
+  }
+
+  .logo {
+    display: block; 
+    margin: auto;
+  }
+
+  .home {
+    margin-top: 20px;
+    background-color: #F5F5F5;
+    border-radius: 7px;
+  }
+
+  .card {
+    width: 306px;
+    height: 341px;
+    background: #F5F4F7 ;
+    border:2px solid #16666C;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    margin-left: 250px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+  }
+  

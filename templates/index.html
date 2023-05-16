@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Propoplex: Your Freelancing Partner</title>
+    <link rel="icon" href="Images/Favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="{{ url_for('static', filename='Logo.svg') }}" alt="Logo" class="logo" />
+      <a href="#" class="home"><i class="fas fa-home"></i>Home</a> 
+      <a href="#"><i class="fas fa-mobile"></i>Contact</a>
+      <a href="#"><i class="fas fa-user"></i>About</a>
+      <a href="#"><i class="fas fa-pen"></i>Request New Tool</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login</a>
+      <button class="premium_button">
+        <i class="fas fa-crown"></i>GO PREMIUM
+      </button>
+      <a href="#" style="margin-top: 70px"
+        ><span class="icon">&#xf013;</span>Settings</a
+      >
+      <a href="#"><span class="icon">&#xf05a;</span>Get Help</a>
+      <a href="#"><span class="icon">&#xf2f5;</span>Logout</a>
+    </div>
+    <ul>
+      <li>
+        <h1 class="title">
+          <span class="propoplex">Propoplex:</span> Elevate Your Freelancing
+          Career Today!
+        </h1>
+      </li>
+      <li class="profile">
+        <img src="{{ url_for('static', filename='Profile Photo.png') }}" alt="profile" />
+      </li>
+    </ul>
+    <h1 class="ourproducts">Our Products</h1>
+    <hr class="opline" />
+    <ul class="product_card">
+      <li>
+        <div class="card selected">
+          <img src="{{ url_for('static', filename='upfree.svg') }}" alt="Logo" class="plogo" />
+          <h2 class="ptitle">
+            Upwork & Freelancer <br />
+            Proposal Writer
+          </h2>
+          <p class="pdesc">Win the Upwork game with AI-written proposals</p>
+          <button class="pbutton" onclick="selectCard(this)" value="1">Selected</button>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="{{ url_for('static', filename='fiverr.svg') }}" alt="Logo" class="plogo" />
+          <h2 class="ptitle">Fiverr Gig Writer</h2>
+          <p class="pdesc">Revolutionize your gig game with AI.</p>
+          <button class="pbutton" onclick="selectCard(this)" value="2">USE NOW</button>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="{{ url_for('static', filename='resume.svg') }}" alt="Logo" class="plogo" />
+          <h2 class="ptitle">Resume Writer</h2>
+          <p class="pdesc">
+            Unleash Your Career Potential with AI-Powered Resumes
+          </p>
+          <button class="pbutton" onclick="selectCard(this)" value="3">USE NOW</button>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="{{ url_for('static', filename='coverletter.svg') }}" alt="Logo" class="plogo" />
+          <h2 class="ptitle">Cover Letter Writer</h2>
+          <p class="pdesc">
+            Revolutionize your job search with AI-written cover letters.
+          </p>
+          <button class="pbutton" onclick="selectCard(this)">USE NOW</button>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="{{ url_for('static', filename='biodata.svg') }}" alt="Logo" class="plogo" />
+          <h2 class="ptitle">Bio Data Writer</h2>
+          <p class="pdesc">Craft your perfect bio effortlessly with AI</p>
+          <button class="pbutton" onclick="selectCard(this)">USE NOW</button>
+        </div>
+      </li>
+    </ul>
+    <div id="upwork" class="form">
+      <h1 class="Upwork">Upwork & Freelancer <br />Proposal Writer</h1>
+      <hr class="upline" />
+      <section class="form1">
+        <form action="/" method="POST">
+          <input
+            type="text"
+            id="field1"
+            name="platform"
+            placeholder="What Platform You're Using?"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="name"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="description"
+            placeholder="Job Description"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="role"
+            placeholder="Your Role"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="price"
+            placeholder="What's Your Price"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="experience"
+            placeholder="Experience in Years"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="pastwork"
+            placeholder="Did you attach Past Works?"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="portfolio"
+            placeholder="Link for your Portfolio (Optional)"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="good_fit"
+            placeholder="Write why you are a good fit"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="words"
+            placeholder="Enter How Many Words Your Proposal Needs To Be?"
+          />
+          <button class="writenow">WRITE MY PROPOSAL</button>
+        </form>
+      </section>
+    </div>
+    
+    <div id="fiverr" class="form">
+      <h1 class="Upwork"> <br> Fiverr Gig Writer</h1>
+      <hr class="upline" />
+      <section class="form1">
+        <form>
+          <input
+            type="text"
+            id="field2"
+            name="field2"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Your Role"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Experience in Years"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Services You Provide"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Things You Offer When Providing your Final Work"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Recent Testimonial (Optional)"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Your Price"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Why They Need to Hire You? (Leave it blank to be written by AI)"
+          />
+          <button class="writenow">WRITE MY GIG</button>
+        </form>
+      </section>
+    </div>
+    
+    <div id="resume" class="form">
+      <h1 class="Upwork"> <br> Resume Writer</h1>
+      <hr class="upline" />
+      <section class="form1">
+        <form>
+          <input
+            type="text"
+            id="field2"
+            name="field2"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Your Role"
+          />
+          <input
+            type="text"
+            id="field2"
+            name="field4"
+            placeholder="Education"
+          />
+          <input
+          type="text"
+          id="field2"
+          name="field4"
+          placeholder="Name Few Personal Projects"
+        />
+        <input
+          type="text"
+          id="field2"
+          name="field4"
+          placeholder="Language with Score"
+        />
+        <input
+          type="text"
+          id="field2"
+          name="field4"
+          placeholder="Interests"
+        />
+        <input
+          type="text"
+          id="field2"
+          name="field4"
+          placeholder="Technical Skills"
+        />
+        <input
+          type="text"
+          id="field2"
+          name="field4"
+          placeholder="Experience in Years"
+        />
+        <button class="writenow">WRITE MY RESUME</button>
+      </form>
+      
+    </section>
+  </div>
+  
+  <h1 class="Upwork">Proposal</h1>
+  <hr class="proline" />
+           
+  <textarea id="proposalText" class="output">{{content}}</textarea>
+  
+  <button id="copyButton">Copy Proposal</button>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
