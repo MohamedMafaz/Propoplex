@@ -137,31 +137,83 @@ li {
   }
 
   .card {
-    width: 306px;
+    width: 285px;
     height: 341px;
     background: #F5F4F7 ;
     border:2px solid #16666C;
     border-radius: 20px;
     padding: 10px;
     color: #fff;
-    margin-left: 250px;
+    margin-left: -20px;
+    transition: all 0.3s ease;
   }
   
   .card-image img {
     width: 100%;
     border-radius: 10px;
+    margin-top: 20px;
   }
   
   .card-content {
     padding: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
   }
   
   .card-title {
     font-size: 18px;
     margin-bottom: 5px;
+    margin-top: -5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #025C63;
+
   }
   
   .card-description {
     font-size: 14px;
   }
   
+.cardImage {
+  width: 160.73px;
+  height: 160.73px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card1 {
+  width: 285px;
+  height: 341px;
+  background: #F5F4F7 ;
+  border:2px solid #16666C;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  margin-left: 250px;
+  transition: all 0.3s ease;
+}
+
+.card:hover,.card1:hover{
+  background: #fff;
+  border: none;
+  box-shadow: 4px 4px 31px #CCD3D3;
+  transform: scale(1.05);
+}
