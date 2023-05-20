@@ -223,6 +223,11 @@ i {
   color: #fff;
 }
 
+.navbar i {
+  color: #7b7b7b;
+}
+
+
 @font-face {
   font-family: 'Font Awesome 5 Free';
   src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'),
@@ -284,6 +289,10 @@ i {
   margin: auto;
   margin-top: 20px; 
   margin-left: 20px;
+}
+
+.premium_button i {
+  color: #fff;
 }
 
 .title {
