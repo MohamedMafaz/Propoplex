@@ -14,17 +14,12 @@ Propoplex is an open-source project, and we welcome contributions from the commu
 - By following these guidelines, we hope to maintain a positive and productive environment for all contributors to the Propoplex project.
 
 # Guidelines for New Page Developers
-<<<<<<< HEAD
 **Code for Favicon**
+```<link rel="icon" href="Images/Favicon.svg" type="image/x-icon" />```
 
-<link rel="icon" href="Images/Favicon.svg" type="image/x-icon" />
-
-
-=======
->>>>>>> 8b4e13b (first commit)
-When you creating a new page for Propoplex, You must need to add Navbar with given code
+**When you creating a new page for Propoplex, You must need to add Navbar with given code**
 **HTML**
-'''<nav>
+```<nav>
       
       <div class="navbar">
         
@@ -48,10 +43,10 @@ When you creating a new page for Propoplex, You must need to add Navbar with giv
         </div>
        
       </div>
-      </nav>
+      </nav>```
       
 Here the CSS Code for Navbar:
-'''@font-face {
+```@font-face {
     font-family: 'Font Awesome 5 Free';
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'),
     url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff');
@@ -170,4 +165,4 @@ Here the CSS Code for Navbar:
 
   .navbar i {
     margin-right: 10px;
-  }
+  }```
