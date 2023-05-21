@@ -29,7 +29,8 @@ body{
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
-  }
+    z-index: 999;
+}
 
   /* Set the style for the links inside the navbar */
     .navbar a {
@@ -49,10 +50,12 @@ body{
     }
 
   /* Change the color of the link when it's hovered over */
-  .navbar a:hover {
-    background: #F5F5F5;
-    border-radius: 7px;
-  }
+        .navbar a:hover {
+            background: #F5F5F5;
+            border-radius: 7px;
+            transform: scale(1.08);
+            transition: all .4s;
+        }
 
   /* Set the style for the content that appears next to the navbar */
   .content {
@@ -73,12 +76,15 @@ body{
     margin-top: 20px; 
     margin-left: 20px;
 }
+    .premium_button:hover {
+        transform: scale(1.08);
+        transition: all .4s;
+    }
 
-
-.nav-link.active {
-    background-color: #7b7b7b;
-    color: #000000;
-  }
+    .nav-link.active {
+        background-color: #7b7b7b;
+        color: #000000;
+    }
 
 li {
     display: inline-block;
@@ -112,19 +118,31 @@ li {
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 193.6px;
-  height: 219.32px;
-  margin-left: 20%;
-  cursor: pointer;
-  text-align: center;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 193.6px;
+    height: 219.32px;
+    margin-left: 20%;
+    cursor: pointer;
+    text-align: center;
+}
+    .card:hover {
+        border-radius: 20px;
+        transform: scale(0.98);
+        transition: all .4s;
+        background-image: linear-gradient(163deg, #3021ed 0%, #00ff2b 100%);
+    }
+
+.pdesc {
+    color: #fff;
 }
 
+}
+    }
 .plogo {
   width: 115.17px;
   height: 69.3px;
@@ -179,9 +197,11 @@ li {
   margin-bottom: 20px;
 }
 
-.p button:hover {
-  background-color: #0062cc;
-}
+    .pbutton:hover {
+        background-color: #053438;
+        transform: scale(1.5);
+        transition: all .4s;
+    }
 
 .logo {
   display: block; 
@@ -191,9 +211,7 @@ li {
 
 .home {
   margin-top: 20px;
-  background-color: #F5F5F5;
-  border-radius: 7px;
-  max-width:160px;
+
 }
 
 .navbar i {
@@ -218,12 +236,7 @@ li {
     -ms-overflow-style: none;
 }
 
-.card.selected {
-  background: linear-gradient(to bottom, #3ec1c7, #18939c);
 
-  .ptitle {color: #fff;}
-  .pdesc {color:#fff;}
-}
 
 .Upwork {
   width: 271.4px;
@@ -352,7 +365,7 @@ margin-top:10px;
     }
     .navbar1{
         display:inherit;
-        z-index:100;
+        
        width:100%;
        max-width:500px;
     }
