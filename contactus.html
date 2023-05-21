@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,10 +29,34 @@
 
   <body>
 
+    <div class="navbar">
+        
+      <img src="Images/Logo.svg" alt="Logo" class="logo" />
+
+      <div class="mainMenu">
+      <a href="#"><span class="icon"></span>Home</a>
+      <a href="#"><span class="icon">&#xf015</span>Services</a>
+      <a href="#"><span class="icon">&#xf095</span>Contact</a>
+      <a href="#"><span class="icon">&#xf007</span>About</a>
+      <a href="#"><span class="icon">&#xf304 </span>Request New Tool</a>
+      <button class="premium_button">
+        <span class="icon">&#xf521</span>GO PREMIUM
+      </button>
+
+      <a href="#" style="margin-top: 70px"
+        ><span class="icon">&#xf013;</span>Settings</a
+      >
+      <a href="#"><span class="icon">&#xf05a;</span>Get Help</a>
+      <a href="#"><span class="icon">&#xf2f5;</span>Logout</a>
+      </div>
+     
+    </div>
+    </nav>
+
       <!--form to send email-->
       <section id="contact-container">
           <div class="image-container">
-              <img src="Images/people.svg" alt="3 businessmen with neckties" />
+           
           </div>
           <div class="form-container">
               <img class="form-image envelope"
@@ -41,27 +69,21 @@
                   <div class="form-group">
                       <label hidden for="name">name</label>
                       <div class="form-group-prepend">
-                          <img class="form-icon"
-                               src="Images/icons/user.svg"
-                               alt="user icon" />
+                        <i class="fas fa-user"></i>
                       </div>
                       <input type="text" name="name" id="name" placeholder="Name">
                   </div>
                   <div class="form-group">
                       <label hidden for="email">email</label>
                       <div class="form-group-prepend">
-                          <img class="form-icon"
-                               src="Images/icons/envelope.svg"
-                               alt="envelope icon" />
+                        <i class="fas fa-envelope"></i>
                       </div>
                       <input type="text" name="email" id="email" placeholder="Email">
                   </div>
                   <div class="form-group">
                       <label hidden for="subject">subject</label>
                       <div class="form-group-prepend">
-                          <img class="form-icon"
-                               src="Images/icons/pen-nib.svg"
-                               alt="pen nib icon" />
+                        <i class="fas fa-pen-nib"></i>
                       </div>
                       <input type="text" name="subject" id="subject" placeholder="Subject">
                   </div>
