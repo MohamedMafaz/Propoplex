@@ -122,6 +122,7 @@ li {
     text-align: center;
 }
 
+
 .plogo {
     width: 115.17px;
     height: 69.3px;
@@ -212,14 +213,14 @@ li {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
-
+/*
     .product_card::-webkit-scrollbar {
-        display: none; /* Hide the scrollbar in WebKit browsers */
+        display: none; 
     }
+*/
 
 
-
-.card.selected {
+.selected {
     background: linear-gradient(to bottom, #3ec1c7, #18939c);
     .ptitle
 

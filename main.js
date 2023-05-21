@@ -23,20 +23,60 @@ function selectCard(button) {
   var value = button.value;
   var formA = document.getElementById("upwork");
   var formB = document.getElementById("fiverr");
-  var formC = document.getElementById("resume");
+    var formC = document.getElementById("resume");
+    let card1 = document.getElementById("upwork-selected");
+    let card2 = document.getElementById("fiverr-selected");
+    let card3 = document.getElementById("resume-selected");
+    let card4 = document.getElementById("cover-letter-selected");
+    let card5 = document.getElementById("biodata-selected");
 
   if (value === "1") {
     formA.classList.remove("form");
     formB.classList.add("form");
-    formC.classList.add("form");
+      formC.classList.add("form");
+      card1.classList.add("selected");
+      card2.classList.remove("selected");
+      card3.classList.remove("selected");
+      card4.classList.remove("selected");
+      card5.classList.remove("selected");
   } else if (value === "2") {
     formA.classList.add("form");
     formB.classList.remove("form");
-    formC.classList.add("form");
+      formC.classList.add("form");
+      card1.classList.remove("selected");
+      card3.classList.remove("selected");
+      card4.classList.remove("selected");
+      card5.classList.remove("selected");
+      card2.classList.add("selected");
+
   } else if (value === "3") {
     formA.classList.add("form");
     formB.classList.add("form");
-    formC.classList.remove("form");
+      formC.classList.remove("form");
+      card3.classList.add("selected");
+      card1.classList.remove("selected");
+      card2.classList.remove("selected");
+      card4.classList.remove("selected");
+      card5.classList.remove("selected");
+
+    }
+  else if (value === "4") {
+      
+      card4.classList.add("selected");
+      card1.classList.remove("selected");
+      card2.classList.remove("selected");
+      card3.classList.remove("selected");
+      card5.classList.remove("selected");
+
+    }
+  else if (value === "5") {
+      
+      card5.classList.add("selected");
+      card1.classList.remove("selected");
+      card2.classList.remove("selected");
+      card3.classList.remove("selected");
+      card4.classList.remove("selected");
+
   }
 }
 
