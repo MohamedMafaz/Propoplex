@@ -405,10 +405,12 @@ margin-top:10px;
       margin-top: 10px;
     }
     form {
-      margin-left: -80px;
-      
+      margin-left: -60px;
+      align-items: center;
     }
-    
+    input {
+      width: 90%;
+    }
     }
 
 .fa-bars {
