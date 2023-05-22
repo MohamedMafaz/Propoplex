@@ -17,8 +17,13 @@ function selectCard(button) {
     // change button text to Selected
     button.innerHTML = "Selected";
 }
-    
-
+let navbar = document.getElementById("navbarId");
+function myFunction() {
+    navbar.classList.add("navbar1");
+}
+function closeFunction() {
+    navbar.classList.remove("navbar1");
+}
 
 // Code for the form needs to be same as selected card
 function selectCard(button) {
@@ -37,7 +42,6 @@ function selectCard(button) {
     let textbtn4 = document.getElementById("cover-letter-btn");
     let textbtn5 = document.getElementById("biodata-btn");
 
-
     if (value === "1") {
         formA.classList.remove("form");
         formB.classList.add("form");
@@ -52,9 +56,6 @@ function selectCard(button) {
         textbtn3.textContent = "USE NOW";
         textbtn4.textContent = "USE NOW";
         textbtn5.textContent = "USE NOW";
-
-
-        
     } else if (value === "2") {
         formA.classList.add("form");
         formB.classList.remove("form");
