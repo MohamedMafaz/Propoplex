@@ -95,7 +95,6 @@ li {
     margin-top: 100px;
     min-width: 170px;
     /* identical to box height */
-
     letter-spacing: 0.04em;
     color: #000000;
     margin-left: 250px;
@@ -224,12 +223,9 @@ li {
 
 .selected {
     background: linear-gradient(to bottom, #3ec1c7, #18939c);
-    .ptitle
-
-{
+    .ptitle{
     color: #fff;
 }
-
 .pdesc {
     color: #fff;
 }
@@ -381,24 +377,24 @@ input:focus {
     }
 
     .product_card {
-        margin-left: 0px;
+        margin-left: -20px;
     }
 
 
     .ourproducts {
         margin-left: 20px;
+
     }
 
     .opline {
-        margin-left: 20px;
-    }
 
+        margin-left:20px;
+    }
     .Upwork {
-        margin-left: 20px;
+      margin-left: 20px;
     }
-
     .upline {
-        margin-left: 20px;
+      margin-left: 20px;
     }
 
     .menu {
@@ -425,6 +421,7 @@ input:focus {
 
     input {
         width: 90%;
+
     }
 }
 
@@ -454,6 +451,7 @@ input:focus {
         margin-top: 20px;
         margin-left: 0px;
     }
+
 }
 
         

@@ -108,3 +108,4 @@ function selectCard(button) {
         textbtn1.textContent = "USE NOW";
     }
 }
+
