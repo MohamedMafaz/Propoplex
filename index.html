@@ -39,50 +39,50 @@
           <hr class="opline" />
           <ul class="product_card">
               <li>
-                  <div class="card selected">
+                  <div class="card" id="upwork-selected">
                       <img src="Images/upfree.svg" alt="Logo" class="plogo" />
                       <h2 class="ptitle">
                           Upwork & Freelancer <br />
                           Proposal Writer
                       </h2>
                       <p class="pdesc">Win the Upwork game with AI-written proposals</p>
-                      <button class="pbutton" onclick="selectCard(this)" value="1">Selected</button>
+                      <button class="pbutton" id="upwork-btn" onclick="selectCard(this)" value="1">USE NOW</button>
                   </div>
               </li>
               <li>
-                  <div class="card">
+                  <div class="card" id="fiverr-selected">
                       <img src="Images/fiverr.svg" alt="Logo" class="plogo" />
                       <h2 class="ptitle">Fiverr Gig Writer</h2>
                       <p class="pdesc">Revolutionize your gig game with AI.</p>
-                      <button class="pbutton" onclick="selectCard(this)" value="2">USE NOW</button>
+                      <button class="pbutton" id="fiverr-btn" onclick="selectCard(this)" value="2">USE NOW</button>
                   </div>
               </li>
               <li>
-                  <div class="card">
+                  <div class="card" id="resume-selected">
                       <img src="Images/resume.svg" alt="Logo" class="plogo" />
                       <h2 class="ptitle">Resume Writer</h2>
                       <p class="pdesc">
                           Unleash Your Career Potential with AI-Powered Resumes
                       </p>
-                      <button class="pbutton" onclick="selectCard(this)" value="3">USE NOW</button>
+                      <button class="pbutton" id="resume-btn" onclick="selectCard(this)" value="3">USE NOW</button>
                   </div>
               </li>
               <li>
-                  <div class="card">
+                  <div class="card"id="cover-letter-selected">
                       <img src="Images/coverletter.svg" alt="Logo" class="plogo" />
                       <h2 class="ptitle">Cover Letter Writer</h2>
                       <p class="pdesc">
                           Revolutionize your job search with AI-written cover letters.
                       </p>
-                      <button class="pbutton" onclick="selectCard(this)">USE NOW</button>
+                      <button class="pbutton" id="cover-letter-btn" onclick="selectCard(this)"value="4">USE NOW</button>
                   </div>
               </li>
               <li>
-                  <div class="card">
+                  <div class="card" id="biodata-selected">
                       <img src="Images/biodata.svg" alt="Logo" class="plogo" />
                       <h2 class="ptitle">Bio Data Writer</h2>
                       <p class="pdesc">Craft your perfect bio effortlessly with AI</p>
-                      <button class="pbutton" onclick="selectCard(this)">USE NOW</button>
+                      <button class="pbutton" id="biodata-btn" onclick="selectCard(this)" value="5">USE NOW</button>
                   </div>
               </li>
           </ul>
@@ -219,64 +219,6 @@
                   </form>
               </section>
           </div>
-          <script>
-            let navbar = document.getElementById("navbarId");
-            function myFunction() {
-                navbar.classList.add("navbar1");
-            }
-            function closeFunction() {
-                navbar.classList.remove("navbar1");
-            }
-
-                          // Summa
-              function selectCard(button) {
-                let card = button.parentNode;
-                // Remove "selected" class from all cards except the clicked one and change button text to "USE NOW"
-                let cards = document.querySelectorAll(".card");
-                cards.forEach(function (c) {
-                  if (c !== card && c.classList.contains("selected")) {
-                    c.classList.remove("selected");
-                    //gets the last children of the card (the button) and change the text
-                    c.children.item(c.children.length - 1).innerHTML = "USE NOW";
-                  }
-                });
-
-                // Add "selected" class to clicked card
-                card.classList.add("selected");
-
-                // change button text to Selected
-                button.innerHTML = "Selected";
-              }
-
-              // Code for the form needs to be same as selected card
-              function selectCard(button) {
-                var value = button.value;
-                var formA = document.getElementById("upwork");
-                var formB = document.getElementById("fiverr");
-                var formC = document.getElementById("resume");
-
-                if (value === "1") {
-                  formA.classList.remove("form");
-                  formB.classList.add("form");
-                  formC.classList.add("form");
-                } else if (value === "2") {
-                  formA.classList.add("form");
-                  formB.classList.remove("form");
-                  formC.classList.add("form");
-                } else if (value === "3") {
-                  formA.classList.add("form");
-                  formB.classList.add("form");
-                  formC.classList.remove("form");
-                }
-              }
-
-              
-
-
-
-
-          </script>
           <script src="main.js"></script>
-      </main>
-  </body>
+      </body>
 </html>
