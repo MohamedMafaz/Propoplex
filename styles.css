@@ -71,7 +71,13 @@ body {
     margin: auto;
     margin-top: 20px;
     margin-left: 20px;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  .premium_button:hover {
+    background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+  }
+  
 
 
 .nav-link.active {
@@ -214,11 +220,11 @@ li {
     -ms-overflow-style: none;
     padding-left:0px;
 }
-/*
+
     .product_card::-webkit-scrollbar {
         display: none; 
     }
-*/
+
 
 
 .selected {
