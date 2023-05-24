@@ -416,13 +416,25 @@ input:focus {
 
     form {
         margin-left: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
     input {
         width: 90%;
-
     }
+
+    .writenow {
+        margin: auto;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    
+    
+    
 }
 
 .fa-bars {
