@@ -1,4 +1,4 @@
-/* Define the Font Awesome font family */
+/* Define the FontAwesome font family */
 @font-face {
     font-family: 'Font Awesome 5 Free';
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff');
@@ -73,7 +73,17 @@ body {
     margin: auto;
     margin-top: 20px;
     margin-left: 20px;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  .premium_button:hover {
+    background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+  }
+
+  .writenow:hover {
+    background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+  }
+  
 
 li {
     display: inline-block;
@@ -91,7 +101,6 @@ li {
     margin-top: 100px;
     min-width: 170px;
     /* identical to box height */
-
     letter-spacing: 0.04em;
     color: #000000;
     margin-left: 250px;
@@ -210,21 +219,18 @@ li {
     -ms-overflow-style: none;
     padding-left: 0px;
 }
-/*
+
     .product_card::-webkit-scrollbar {
         display: none; 
     }
-*/
+
 
 
 .selected {
     background: linear-gradient(to bottom, #3ec1c7, #18939c);
-    .ptitle
-
-{
+    .ptitle{
     color: #fff;
 }
-
 .pdesc {
     color: #fff;
 }
@@ -376,24 +382,24 @@ input:focus {
     }
 
     .product_card {
-        margin-left: 0px;
+        margin-left: -20px;
     }
 
 
     .ourproducts {
         margin-left: 20px;
+
     }
 
     .opline {
-        margin-left: 20px;
-    }
 
+        margin-left:20px;
+    }
     .Upwork {
-        margin-left: 20px;
+      margin-left: 20px;
     }
-
     .upline {
-        margin-left: 20px;
+      margin-left: 20px;
     }
 
     .menu {
@@ -415,12 +421,25 @@ input:focus {
 
     form {
         margin-left: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
     input {
         width: 90%;
     }
+
+    .writenow {
+        margin: auto;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    
+    
+    
 }
 
 .fa-bars {
@@ -451,4 +470,5 @@ input:focus {
         margin-top: 20px;
         margin-left: 0px;
     }
+
 }
