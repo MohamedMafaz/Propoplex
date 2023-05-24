@@ -77,6 +77,10 @@ body {
   .premium_button:hover {
     background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
   }
+
+  .writenow:hover {
+    background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+  }
   
 
 
