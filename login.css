@@ -4,6 +4,79 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+/*---------Navbar styling----------------*/
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 223px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
+}
+
+    /* Set the style for the links inside the navbar */
+    .navbar a {
+        display: block;
+        color: #7b7b7b;
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        max-width: 160px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+
+        /* Change the color of the link when it's hovered over */
+        .navbar a:hover, .navbar a:focus, .item-selected {
+            background: #F5F5F5;
+            border-radius: 7px;
+            outline: none;
+        }
+
+.premium_button {
+    width: 167.48px;
+    height: 42px;
+    background: linear-gradient(265.55deg, #3EC1C7 19.07%, #18939C 101.72%);
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+    .premium_button:hover {
+        background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+    }
+
+.home {
+    margin-top: 20px;
+    border-radius: 7px;
+    max-width: 160px;
+    color: red;
+}
+
+.navbar i {
+    margin-right: 10px;
+}
+
+.plogo {
+    width: 115.17px;
+    height: 69.3px;
+    margin-bottom: 16px;
+}
+/*------Navbar section End*/
 section{
     display: flex;
     justify-content: center;
