@@ -47,11 +47,13 @@ body {
         letter-spacing: 0.04em;
     }
 
-        /* Change the color of the link when it's hovered over */
-        .navbar a:hover {
-            background: #F5F5F5;
-            border-radius: 7px;
-        }
+        /* Change the color of the link when it's hovered over */   
+    .navbar a:hover, .navbar a:focus {
+        background: #F5F5F5;
+        border-radius: 7px;
+        outline: none;
+    }
+
 
 /* Set the style for the content that appears next to the navbar */
 .content {
@@ -82,12 +84,6 @@ body {
     background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
   }
   
-
-
-.nav-link.active {
-    background-color: #7b7b7b;
-    color: #000000;
-}
 
 li {
     display: inline-block;
@@ -129,7 +125,7 @@ li {
     margin-left: 20%;
     cursor: pointer;
     text-align: center;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 
@@ -197,7 +193,6 @@ li {
 
 .home {
     margin-top: 20px;
-    background-color: #F5F5F5;
     border-radius: 7px;
     max-width: 160px;
 }
@@ -222,7 +217,7 @@ li {
     overflow-y: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding-left:0px;
+    padding-left: 0px;
 }
 
     .product_card::-webkit-scrollbar {
@@ -466,14 +461,14 @@ input:focus {
     .opline {
         margin-left: 45%;
     }
+
     .product_card {
         max-width: 320px;
     }
+
     .card {
         margin-top: 20px;
         margin-left: 0px;
     }
 
 }
-
-        
