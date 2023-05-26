@@ -19,7 +19,7 @@
 body{
   background-color: #F5F4F7;
 }
-
+/*---------Navbar styling----------------*/
 .navbar {
     position: fixed;
     left: 0;
@@ -30,37 +30,31 @@ body{
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
-  }
+}
 
-  /* Set the style for the links inside the navbar */
-  .navbar a {
-    display: block;
-    color: #7b7b7b;
-    text-decoration: none;
-    padding: 10px;
-    margin-left: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
-    /* identical to box height */
+    /* Set the style for the links inside the navbar */
+    .navbar a {
+        display: block;
+        color: #7b7b7b;
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        max-width: 160px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
 
-    letter-spacing: 0.04em;
-  }
-
-  /* Change the color of the link when it's hovered over */
-  .navbar a:hover {
-    background: #F5F5F5;
-    border-radius: 7px;
-  }
-
-  /* Set the style for the content that appears next to the navbar */
-  .content {
-    margin-left: 150px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+        /* Change the color of the link when it's hovered over */
+        .navbar a:hover, .navbar a:focus, .item-selected {
+            background: #F5F5F5;
+            border-radius: 7px;
+            outline: none;
+        }
 
 .premium_button {
     width: 167.48px;
@@ -69,11 +63,50 @@ body{
     border-radius: 7px;
     border: none;
     color: #fff;
-    display: block; 
+    display: block;
     margin: auto;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-left: 20px;
+    transition: background-color 0.3s ease;
 }
+
+
+    .premium_button:hover {
+        background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+    }
+
+.home {
+    margin-top: 20px;
+    border-radius: 7px;
+    max-width: 160px;
+    color: red;
+}
+
+.navbar i {
+    margin-right: 10px;
+}
+
+.plogo {
+    width: 115.17px;
+    height: 69.3px;
+    margin-bottom: 16px;
+}
+/*------Navbar section End*/
+
+
+
+       
+
+
+
+/* Set the style for the content that appears next to the navbar */
+.content {
+    margin-left: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
 
 .title {
     font-family: 'Poppins';
@@ -91,19 +124,14 @@ body{
     
 }
 
-.nav-link.active {
-    background-color: #7b7b7b;
-    color: #000000;
-  }
+
 
 li {
     display: inline-block;
     margin-right: 10px;
 }
 
-.navbar i {
-    margin-right: 10px;
-  }
+
 
 .title {
     font-family: 'Poppins';
@@ -130,11 +158,7 @@ li {
     margin: auto;
   }
 
-  .home {
-    margin-top: 20px;
-    background-color: #F5F5F5;
-    border-radius: 7px;
-  }
+
 
   .card {
     width: 285px;
