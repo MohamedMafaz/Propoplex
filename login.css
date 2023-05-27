@@ -4,6 +4,16 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+
+/* Use the Font Awesome font family for the icon */
+.icon {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-style: normal;
+    margin-right: 10px;
+    color: #7B7B7B;
+}
+
 /*---------Navbar styling----------------*/
 .navbar {
     position: fixed;
