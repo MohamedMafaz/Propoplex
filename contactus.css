@@ -333,10 +333,12 @@ i {
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
-  /* identical to box height */
-
-  letter-spacing: 0.04em;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+
 
 /* Change the color of the link when it's hovered over */
 .navbar a:hover {
