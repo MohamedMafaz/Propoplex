@@ -196,3 +196,8 @@ form {
 body {
     background-color: #F5F4F7;
 }
+
+.nav-link1active {
+  background: #F5F5F5;
+border-radius: 7px;
+}
