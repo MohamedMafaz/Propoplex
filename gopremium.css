@@ -1,0 +1,50 @@
+.premium-main{
+    margin-left: 230px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.premium-main *{
+    font-family: poppins,arial;
+}
+.premium-title{
+    color:#025C63;
+    font-family: poppins;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.golden-title{
+    background-image:linear-gradient(to right,#A67C00,#FFBF00,#A67C00);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.features-main{
+    display: flex;
+    gap:20px
+}
+.features-card{
+    height: 425px;
+    width: 220px;
+    border-radius: 20px;
+    background-image:linear-gradient(to right,#f2f2f2,#ffffff);
+    padding:30px
+}
+.price{
+    color:#025C63;
+    font-weight: 900;
+    font-size: 40px;
+}
+.features-list *{
+    text-align: left;
+    font-size:17px;
+    margin:3px;
+}
+.features-card button{
+    height: 40px;
+    width: 170px;
+    border-radius: 5px;
+    border:#025C63 solid 2px;
+    margin:10px
+}
