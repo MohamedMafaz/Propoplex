@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+<head>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Contact Us - Fodome</title>
-    <link rel="icon" type="image/x-icon" href="Images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.svg" />
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+          rel="stylesheet" />
     <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Custom Style Sheet -->
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="contactus.css" />
-  </head>
+    <link rel="stylesheet" href="navbar.css" />
 
-  <body>
 
-    <div class="navbar">
-        
-      <img src="Images/Logo.svg" alt="Logo" class="logo" />
 
-      <div class="mainMenu">
-      <a href="#"><span class="icon"></span>Home</a>
-      <a href="#"><span class="icon">&#xf015</span>Services</a>
-      <a href="#"><span class="icon">&#xf095</span>Contact</a>
-      <a href="#"><span class="icon">&#xf007</span>About</a>
-      <a href="#"><span class="icon">&#xf304 </span>Request New Tool</a>
-      <button class="premium_button">
-        <span class="icon">&#xf521</span>GO PREMIUM
-      </button>
+</head>
 
-      <a href="#" style="margin-top: 70px"
-        ><span class="icon">&#xf013;</span>Settings</a
-      >
-      <a href="#"><span class="icon">&#xf05a;</span>Get Help</a>
-      <a href="#"><span class="icon">&#xf2f5;</span>Logout</a>
-      </div>
-     
+<body>
+
+    <div class="navbar" id="navbarId" onclick="closeFunction()">
+        <img src="Images/Logo.svg" alt="Logo" class="logo" />
+        <a href="index.html" class="home"><i class="fas fa-home"></i>Home</a>
+        <a href="contactus.html" class="item-selected"><i class="fas fa-mobile"></i>Contact</a>
+        <a href="aboutus.html"><i class="fas fa-user"></i>About</a>
+        <a href="requestnewtool.html"><i class="fas fa-pen"></i>Request New Tool</a>
+        <a href="login.html"><i class="fas fa-user"></i> Login</a>
+        <button class="premium_button">
+            <i class="fas fa-crown" href="gopremium.html"></i>GO PREMIUM
+        </button>
+        <a href="settings.html" style="margin-top: 70px"><span class="icon">&#xf013;</span>Settings</a>
+        <a href="gethelp.html"><span class="icon">&#xf05a;</span>Get Help</a>
+        <a href="logout.html"><span class="icon">&#xf2f5;</span>Logout</a>
     </div>
-    </nav>
+    <div class="menu-bar">
+        <div class="menu"><i class="fas fa-bars" onclick="myFunction()"></i></div>
+        <h1 class="title"><p>&nbsp;</p></h1>
+        <div class="profile">
+            <img src="Images/Profile Photo.png" alt="profile" />
+        </div>
+    </div>
 
-      <!--form to send email-->
-      <section id="contact-container">
-          <div class="image-container">
-           
-          </div>
-          <div class="form-container">
-              <img class="form-image envelope"
-                   src="Images/envelope.svg"
-                   alt="open envelope with letter inside" />
-              <img class="form-image phonebook"
-                   src="Images/phonebook.svg"
-                   alt="phone book" />
-              <form id="form">
-                  <div class="form-group">
-                      <label hidden for="name">name</label>
-                      <div class="form-group-prepend">
+    <!--form to send email-->
+    <section id="contact-container">
+
+        </div>
+        <div class="form-container">
+            <img class="form-image envelope"
+                 src="Images/envelope.svg"
+                 alt="open envelope with letter inside" />
+            <img class="form-image phonebook"
+                 src="Images/phonebook.svg"
+                 alt="phone book" />
+            <form id="form">
+                <div class="form-group">
+                    <label hidden for="name">name</label>
+                    <div class="form-group-prepend">
                         <i class="fas fa-user"></i>
-                      </div>
-                      <input type="text" name="name" id="name" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-                      <label hidden for="email">email</label>
-                      <div class="form-group-prepend">
+                    </div>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label hidden for="email">email</label>
+                    <div class="form-group-prepend">
                         <i class="fas fa-envelope"></i>
-                      </div>
-                      <input type="text" name="email" id="email" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                      <label hidden for="subject">subject</label>
-                      <div class="form-group-prepend">
+                    </div>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label hidden for="subject">subject</label>
+                    <div class="form-group-prepend">
                         <i class="fas fa-pen-nib"></i>
-                      </div>
-                      <input type="text" name="subject" id="subject" placeholder="Subject">
-                  </div>
-                  <div class="form-group">
-                      <label hidden for="message">message</label>
-                      <div class="form-group-prepend">
-                          <img class="form-icon"
-                               src="Images/icons/bars.svg"
-                               alt="bars icon" />
-                      </div>
-                      <textarea name="message"
-                                id="message"
-                                placeholder="Message"
-                                rows="5"
-                                style="resize: none"></textarea>
-                  </div>
-                  <input type="submit" class="send-button" id="button" value="SEND">
-              </form>
-          </div>
-      </section>
-      <script type="text/javascript"
-              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      <script type="text/javascript">
-          emailjs.init('xH-NE2pVqNw2nI25u')
-      </script>
-      <script src="contactus.js"></script>
+                    </div>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label hidden for="message">message</label>
+                    <div class="form-group-prepend">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <textarea name="message"
+                              id="message"
+                              placeholder="Message"
+                              rows="5"
+                              style="resize: none"></textarea>
+                </div>
+                <input type="submit" class="send-button" id="button" value="SEND">
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('xH-NE2pVqNw2nI25u')
+    </script>
+    <script src="contactus.js"></script>
 
-      <!-- <section class="app-section">
+    <!-- <section class="app-section">
       <div class="app-content">
         <h2 style="margin-left: 80px">
           Get the <span style="color: #f54749">Fodome</span> <br />App Now
@@ -181,9 +174,9 @@
       </p>
       <div class="faq-line"></div>
     </section> -->
-      <!-- <section class="faq-section"> -->
-      <!-- search FAQ for keywords -->
-      <!-- <div class="search-container">
+    <!-- <section class="faq-section"> -->
+    <!-- search FAQ for keywords -->
+    <!-- <div class="search-container">
         <form id="search-form">
           <i
             style="margin-left: 20px; color: #f54749"
@@ -226,6 +219,6 @@
         </div>
       </div>
     </section> -->
-      <!-- <script src="main.js"></script> -->
-  </body>
+    <!-- <script src="main.js"></script> -->
+</body>
 </html>

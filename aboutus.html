@@ -1,128 +1,136 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Propoplex: Your Freelancing Partner</title>
     <link rel="icon" href="Images/Favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="aboutus.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="navbar">
-      <img src="Images/Logo.svg" alt="Logo" class="logo" />
-      <a href="#" class="home"><i class="fas fa-home"></i>Home</a> 
-      <a href="contactus.html"><i class="fas fa-mobile"></i>Contact</a>
-      <a href="#"><i class="fas fa-user"></i>About</a>
-      <a href="#"><i class="fas fa-pen"></i>Request New Tool</a>
-      <a href="login.html"><i class="fas fa-user"></i> Login</a>
-      <button class="premium_button">
-        <i class="fas fa-crown"></i>GO PREMIUM
-      </button>
-      <a href="#" style="margin-top: 70px"
-        ><span class="icon">&#xf013;</span>Settings</a
-      >
-      <a href="#"><span class="icon">&#xf05a;</span>Get Help</a>
-      <a href="#"><span class="icon">&#xf2f5;</span>Logout</a>
+</head>
+<body>
+    <div class="navbar" id="navbarId" onclick="closeFunction()">
+        <img src="Images/Logo.svg" alt="Logo" class="logo" />
+        <a href="index.html" class="home nav-link"><i class="fas fa-home"></i>Home</a>
+        <a href="contactus.html" class="nav-link"><i class="fas fa-mobile"></i>Contact</a>
+        <a href="aboutus.html" class="nav-link item-selected"><i class="fas fa-user"></i>About</a>
+        <a href="requestnewtool.html" class="nav-link"><i class="fas fa-pen"></i>Request New Tool</a>
+        <a href="login.html" class="nav-link"><i class="fas fa-user"></i> Login</a>
+        <button class="premium_button">
+            <i class="fas fa-crown" href="gopremium.html"></i>GO PREMIUM
+        </button>
+        <a href="settings.html" class="nav-link" style="margin-top: 70px">
+            <span class="icon nav-link">&#xf013;</span>Settings
+        </a>
+
+        <a href="gethelp.html" class="nav-link"><span class="icon">&#xf05a;</span>Get Help</a>
+        <a href="logout.html" class="nav-link"><span class="icon">&#xf2f5;</span>Logout</a>
     </div>
 
-    <h1 class="title"><span class="propoplex">About Propoplex:</span> Empowering Freelancers with AI-Powered Proposal Writing</h1>
+    <div class="menu-bar">
+        <div class="menu"><i class="fas fa-bars" onclick="myFunction()"></i></div>
+        <h1 class="title"><span class="propoplex">About Propoplex:</span> Empowering Freelancers with AI-Powered Proposal Writing</h1>
+        <div class="profile">
+            <img src="Images/Profile Photo.png" alt="profile" />
+        </div>
+    </div>
+
 
     <!--Product Card-->
-<div class="card-container">
-    <div class="card1">
-        <div class="card-image">
-          <img src="Images/Our Mission.svg" class="cardImage">
-        </div>
-        <div class="card-content">
-          <h3 class="card-title">Our Mission</h3>
-          <p class="card-description">Enhancing their chances of securing high-quality projects on popular freelancing platforms</p>
-        </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-        <img src="Images/The Power of AI.svg" class="cardImage">
-      </div>
-      <div class="card-content">
-        <h3 class="card-title">The Power of AI</h3>
-        <p class="card-description">Leveraging cutting-edge artificial intelligence technology to assist freelancers</p>
-      </div>
-  </div>
-  <div class="card">
-    <div class="card-image">
-      <img src="Images/How It Works.svg" class="cardImage">
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">How it Works</h3>
-      <p class="card-description">AI algorithms analyze project requirements and generate personalized proposal templates</p>
-    </div>
-</div>
-</div>
-      
-<div class="card-container">
-  <div class="card1">
-      <div class="card-image">
-        <img src="Images/Tailored Proposals.svg" class="cardImage">
-      </div>
-      <div class="card-content">
-        <h3 class="card-title">Tailored Proposals</h3>
-        <p class="card-description">Crafting tailored proposals that highlight freelancers' skills and expertise</p>
-      </div>
-  </div>
-  <div class="card">
-    <div class="card-image">
-      <img src="Images/Enhancing Success Rates.svg" class="cardImage">
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">Enhancing Success Rates</h3>
-      <p class="card-description">Increasing freelancers' chances of standing out and winning projects</p>
-    </div>
-</div>
-<div class="card">
-  <div class="card-image">
-    <img src="Images/Time Saving.svg" class="cardImage">
-  </div>
-  <div class="card-content">
-    <h3 class="card-title">Time Saving</h3>
-    <p class="card-description">Reducing the time and effort required to create professional proposals</p>
-  </div>
-</div>
-</div>
 
-<div class="card-container">
-  <div class="card1">
-      <div class="card-image">
-        <img src="Images/User Friendly Experience.svg" class="cardImage">
-      </div>
-      <div class="card-content">
-        <h3 class="card-title">User Friendly Experience</h3>
-        <p class="card-description">Creating a smooth and enjoyable user experience for freelancers</p>
-      </div>
-  </div>
-  <div class="card">
-    <div class="card-image">
-      <img src="Images/Trusted by Freelancers.svg" class="cardImage">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/Our Mission.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Our Mission</h3>
+                <p class="card-description">Enhancing their chances of securing high-quality projects on popular freelancing platforms</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/The Power of AI.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">The Power of AI</h3>
+                <p class="card-description">Leveraging cutting-edge artificial intelligence technology to assist freelancers</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/How It Works.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">How it Works</h3>
+                <p class="card-description">AI algorithms analyze project requirements and generate personalized proposal templates</p>
+            </div>
+        </div>
     </div>
-    <div class="card-content">
-      <h3 class="card-title">Trusted by Freelancers</h3>
-      <p class="card-description">Establishing a supportive community of freelancers</p>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/Tailored Proposals.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Tailored Proposals</h3>
+                <p class="card-description">Crafting tailored proposals that highlight freelancers' skills and expertise</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/Enhancing Success Rates.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Enhancing Success Rates</h3>
+                <p class="card-description">Increasing freelancers' chances of standing out and winning projects</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/Time Saving.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Time Saving</h3>
+                <p class="card-description">Reducing the time and effort required to create professional proposals</p>
+            </div>
+        </div>
     </div>
-</div>
-<div class="card">
-  <div class="card-image">
-    <img src="Images/Privacy & Security.svg" class="cardImage">
-  </div>
-  <div class="card-content">
-    <h3 class="card-title">Privacy & Security</h3>
-    <p class="card-description">Ensuring the protection and confidentiality of user information</p>
-  </div>
-</div>
-</div>
-   </body>
-   </html>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/User Friendly Experience.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">User Friendly Experience</h3>
+                <p class="card-description">Creating a smooth and enjoyable user experience for freelancers</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/Trusted by Freelancers.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Trusted by Freelancers</h3>
+                <p class="card-description">Establishing a supportive community of freelancers</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="Images/Privacy & Security.svg" class="cardImage">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Privacy & Security</h3>
+                <p class="card-description">Ensuring the protection and confidentiality of user information</p>
+            </div>
+        </div>
+    </div>
+    <script src="aboutus.js"></script>
+</body>
+</html>

@@ -18,3 +18,12 @@ document.getElementById('form')
                 alert(JSON.stringify(err));
             });
     });
+
+let navbar = document.getElementById("navbarId");
+function myFunction() {
+    navbar.classList.add("navbar1");
+    console.log("button pushed");
+}
+function closeFunction() {
+    navbar.classList.remove("navbar1");
+}

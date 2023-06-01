@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="login.css">
-  <title>Login - Propoplex</title>
-  <link rel="icon" href="Images/Favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <title>Login - Propoplex</title>
+    <link rel="icon" href="Images/Favicon.svg" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+          rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
+    <div class="navbar" id="navbarId" onclick="closeFunction()">
+        <img src="Images/Logo.svg" alt="Logo" class="logo" />
+        <a href="index.html" class="home"><i class="fas fa-home"></i>Home</a>
+        <a href="contactus.html"><i class="fas fa-mobile"></i>Contact</a>
+        <a href="aboutus.html"><i class="fas fa-user"></i>About</a>
+        <a href="requestnewtool.html"><i class="fas fa-pen"></i>Request New Tool</a>
+        <a href="login.html" class="item-selected"><i class="fas fa-user"></i> Login</a>
+        <button class="premium_button">
+            <i class="fas fa-crown" href="gopremium.html"></i>GO PREMIUM
+        </button>
+        <a href="settings.html" style="margin-top: 70px"><span class="icon">&#xf013;</span>Settings</a>
+        <a href="gethelp.html"><span class="icon">&#xf05a;</span>Get Help</a>
+        <a href="logout.html"><span class="icon">&#xf2f5;</span>Logout</a>
+    </div>
+    <div class="menu-bar">
+        <div class="menu"><i class="fas fa-bars" onclick="myFunction()"></i></div>
+        <h1 class="title"><p>&nbsp;</p></h1>
+        <div class="profile">
+            <img src="Images/Profile Photo.png" alt="profile" />
+        </div>
+    </div>
     <section>
         <div class="form-box">
             <div class="form-value">
@@ -23,8 +56,8 @@
                         <label for="">Password</label>
                     </div>
                     <div class="forget">
-                        <label for=""><input type="checkbox" >Remember Me  <a href="forgetPassword.html" style="margin-left: 40px;">Forget Password</a></label>
-                      
+                        <label for=""><input type="checkbox">Remember Me  <a href="forgetPassword.html" style="margin-left: 40px;">Forget Password</a></label>
+
                     </div>
                     <button>Log in</button>
                     <div class="register">
@@ -36,5 +69,8 @@
     </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="login.js">
+
+    </script>
 </body>
 </html>
