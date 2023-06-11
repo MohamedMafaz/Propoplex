@@ -1,210 +1,73 @@
-@font-face {
-    font-family: 'Font Awesome 5 Free';
-    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
+.logintitle p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
 }
 
+.logintitle h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 1000px;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: 0.04em;
 
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins',sans-serif;
+  color: #ffffff;
 }
 
-/* Use the Font Awesome font family for the icon */
-.icon {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 600;
-    font-style: normal;
-    margin-right: 10px;
-    color: #7B7B7B;
+.loginpage {
+  width: 301px;
+  height: 505px;
+  background: #209da5;
+  border-radius: 20px;
+  margin-left: 250px;
+  padding: 30px;
 }
 
-.menu-bar {
-    display: flex;
-    position: fixed;
-    align-items: flex-start;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-}
-
-.fa-bars {
-    align-self: flex-start;
-    font-size: 40px;
-    margin-left: 10px;
-    margin-top: 15px;
-    color: #37b9bf;
-}
-
-.title {
-    align-self: center;
-    font-family: 'Poppins';
-    font-style: bold;
-    font-weight: 900;
-    font-size: 22px;
-    line-height: 33px;
-    /* identical to box height */
-
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #16666C;
-    margin-left: 300px;
-    display: inline-block;
-}
-
-.profile {
-    align-self: flex-end;
-}
-
-    .profile img {
-        margin: 20px 20px;
-    }
-
-.propoplex {
-    color: #18939C;
-    display: inline-block;
-}
-
-
-
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    background: url('Images/bg.jpg')no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.form-box {
+/* Code for testimonial section */
+.testimonial-container {
+    width: 300px;
+    height: 191px;
     position: relative;
-    width: 400px;
-    height: 450px;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h2 {
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
-}
-
-.inputbox {
-    position: relative;
-    margin: 30px 0;
-    width: 310px;
-    border-bottom: 2px solid #fff;
-}
-
-    .inputbox label {
-        position: absolute;
-        top: 50%;
-        left: 5px;
-        transform: translateY(-50%);
-        color: #fff;
-        font-size: 1em;
-        pointer-events: none;
-        transition: .5s;
-    }
-
-input:focus ~ label,
-input:valid ~ label {
-    top: -5px;
-}
-
-.inputbox input {
-    width: 100%;
+    overflow: hidden;
+  }
+  
+  .testimonial-card {
+    width: 268px;
+    height: 191px; 
+    background: #008A93;
+    border-radius: 17px;
+  }
+  
+  .testimonial-card.active {
+    display: block;
+  }
+  
+  .testimonial-content {
+    padding: 10px;
+  }
+  
+  .testimonial-photo {
+    width: 50px;
     height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-    color: #fff;
-}
-
-.inputbox ion-icon {
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    top: 20px;
-}
-
-.forget {
-    margin: -15px 0 15px;
-    font-size: .9em;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-
-    .forget label input {
-        margin-right: 3px;
-    }
-
-    .forget label a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-        .forget label a:hover {
-            text-decoration: underline;
-        }
-
-button {
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    background: #fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.register {
-    font-size: .9em;
-    color: #fff;
-    text-align: center;
-    margin: 25px 0 10px;
-}
-
-    .register p a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 600;
-    }
-
-        .register p a:hover {
-            text-decoration: underline;
-        }
-
-@media only screen and (max-width: 786px) {
-    .navbar {
-        display: none;
-    }
-
-    .navbar1 {
-        display: inherit;
-        z-index: 100;
-        width: 100%;
-        max-width: 500px;
-    }
-}
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+  }
+  
+  .testimonial-role {
+    color: #888;
+    font-style: italic;
+  }
+  

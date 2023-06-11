@@ -18,6 +18,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
+    <!--Start of Navbar-->
     <div class="navbar" id="navbarId" onclick="closeFunction()">
         <img src="Images/Logo.svg" alt="Logo" class="logo" />
         <a href="index.html" class="home"><i class="fas fa-home"></i>Home</a>
@@ -32,45 +33,44 @@
         <a href="gethelp.html"><span class="icon">&#xf05a;</span>Get Help</a>
         <a href="logout.html"><span class="icon">&#xf2f5;</span>Logout</a>
     </div>
-    <div class="menu-bar">
-        <div class="menu"><i class="fas fa-bars" onclick="myFunction()"></i></div>
-        <h1 class="title"><p>&nbsp;</p></h1>
-        <div class="profile">
-            <img src="Images/Profile Photo.png" alt="profile" />
+    <!--End of Navbar-->
+    <section class="loginpage">
+        <div class="logintitle">
+            <p>PROPOPLEX</p>
+            <h1>Unlock the Power of AI for Your Freelancing Proposals!</h1>
+            <p>create compelling, personalized templates and elevate your freelance career!</p>
         </div>
-    </div>
-    <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>Welcome Back!</h2>
-                    <p style="text-align: center; color: #fff; margin-top: 10px;">Log in and use the opportunities <br>offered by our portal.</p>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
-                        <label for="">Password</label>
-                    </div>
-                    <div class="forget">
-                        <label for=""><input type="checkbox">Remember Me  <a href="forgetPassword.html" style="margin-left: 40px;">Forget Password</a></label>
-
-                    </div>
-                    <button>Log in</button>
-                    <div class="register">
-                        <p>Don't have a account <a href="signup.html">Register</a></p>
-                    </div>
-                </form>
-            </div>
+        <div class="testimonial-section">
+            <div class="testimonial-container">
+                <div class="testimonial-card active">
+                  <div class="testimonial-content">
+                    <p>I've been blown away by the game-changing capabilities of PropoPlex. As a freelancer, crafting compelling proposals was always a time-consuming and daunting task. </p>
+                  </div>
+                  
+                  <img class="testimonial-photo" src="Images/Profile Photo.png" alt="Profile Photo 1">
+                </div>
+                
+                <div class="testimonial-card">
+                  <div class="testimonial-content">
+                    <p>Testimonial content 2</p>
+                    <span class="testimonial-name">Jane Smith</span>
+                    <span class="testimonial-role">Role 2</span>
+                  </div>
+                  <img class="testimonial-photo" src="profile-photo-2.jpg" alt="Profile Photo 2">
+                </div>
+                
+                <div class="testimonial-card">
+                  <div class="testimonial-content">
+                    <p>Testimonial content 3</p>
+                    <span class="testimonial-name">Alex Johnson</span>
+                    <span class="testimonial-role">Role 3</span>
+                  </div>
+                  <img class="testimonial-photo" src="profile-photo-3.jpg" alt="Profile Photo 3">
+                </div>
+              </div>
+              
         </div>
     </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="login.js">
-
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
