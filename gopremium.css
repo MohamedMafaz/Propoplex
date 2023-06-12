@@ -148,3 +148,82 @@
 .show-answer .question-lower{
     display: block;
 }
+
+@media (max-width:1150px){
+    .testimonials-outer{
+        flex-direction: column;
+    }
+    .testimonials:nth-child(2n){
+        transform: translate(0,0);
+    }
+}
+@media only screen and (max-width: 850px) {
+    .navbar {
+        display: none;
+    }
+    .navbar1 {
+        display: inherit;
+        z-index: 100;
+        width: 100%;
+        max-width: 500px;
+    }
+    .logo {
+        margin-left: 15px;
+    }
+    .title {
+        margin-left: 0px;
+    }
+    .product_card {
+        margin-left: -20px;
+    }
+    .ourproducts {
+        margin-left: 20px;
+
+    }
+    .opline {
+        margin-left:20px;
+    }
+    .Upwork {
+      margin-left: 20px;
+    }
+    .upline {
+      margin-left: 20px;
+    }
+    .menu {
+        display: contents;
+    }
+    .title {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .profile {
+        margin-right: 8%;
+    }
+    .propoplex {
+        margin-top: 10px;
+    }
+    form {
+        margin-left: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        width: 90%;
+    }
+    .writenow {
+        margin: auto;
+        margin-left: 0px;
+        margin-top: 15px;
+    }           
+    .premium-main{
+        margin-left: 0;
+        margin-top: 50px;
+    } 
+}
+@media (max-width:600px){
+    .premium-title{
+        font-size: 5vw;
+    }
+}
