@@ -1,3 +1,8 @@
+html,body{
+    overflow-x: hidden;
+}
+
+
 /* Define the FontAwesome font family */
 @font-face {
     font-family: 'Font Awesome 5 Free';

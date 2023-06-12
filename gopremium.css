@@ -35,6 +35,7 @@
     color:#025C63;
     font-weight: 900;
     font-size: 40px;
+    margin:0;
 }
 .features-list *{
     text-align: left;
@@ -223,7 +224,18 @@
     } 
 }
 @media (max-width:600px){
-    .premium-title{
-        font-size: 5vw;
+    .premium-main h1{
+        font-size: 6vw;
+        margin:40px 2vw;
+    }
+    .questions-search-bar{
+        width:90%;
+    }
+    .question{
+        width:80vw;
+        padding:10px 4vw;
+    }
+    .features-main{
+        flex-direction: column;
     }
 }
