@@ -509,7 +509,7 @@
           </button>
         </div>
       </div>
-      <h1 class="testimonials-title">Testimonials</h1>
+      <h1 class="h1-title">Testimonials</h1>
       <div class="testimonials-outer">
         <div class="testimonials">
           <div class="testimonials-upper">
@@ -550,8 +550,80 @@
           </div>
         </div>
       </div>
+      <h1 class="h1-title">Frequently Asked Questions</h1>
+      <div class="questions-search-bar">
+        <input placeholder="Search Questions" class="search-questions-input">
+      </div>
+      <div class="questions-list-outer">
+        <div class="question">
+          <div class="question-heading">What is Propoplex?</div>
+          <button class="hide-show-btn" onclick="toggleshow(this)">+</button>
+          <div class="question-lower">
+            <hr>
+            <div class="question-answer">
+              Propoplex is a website that uses AI technology to generate 
+              attractive proposals for freelancing sites.
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-heading">How does Propoplex work?</div>
+          <button class="hide-show-btn" onclick="toggleshow(this)">+</button>
+          <div class="question-lower">
+            <hr>
+            <div class="question-answer">
+              Propoplex is a website that uses AI technology to generate 
+              attractive proposals for freelancing sites.
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-heading">Is Propoplex free to use?</div>
+          <button class="hide-show-btn" onclick="toggleshow(this)">+</button>
+          <div class="question-lower">
+            <hr>
+            <div class="question-answer">
+              Propoplex is a website that uses AI technology to generate 
+              attractive proposals for freelancing sites.
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-heading">Is Propoplex free to use?</div>
+          <button class="hide-show-btn" onclick="toggleshow(this)">+</button>
+          <div class="question-lower">
+            <hr>
+            <div class="question-answer">
+              Propoplex is a website that uses AI technology to generate 
+              attractive proposals for freelancing sites.
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="question-heading">How do I create a proposal</div>
+          <button class="hide-show-btn" onclick="toggleshow(this)">+</button>
+          <div class="question-lower">
+            <hr>
+            <div class="question-answer">
+              Propoplex is a website that uses AI technology to generate 
+              attractive proposals for freelancing sites.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
     <script src="main.js"></script>
+    <script>
+      function toggleshow(button){
+        var questionDiv = button.parentNode;
+        questionDiv.classList.toggle("show-answer");
+        if(button.textContent=='+')
+          button.textContent='-'
+        else 
+          button.textContent='+'
+      }
+    </script>
   </body>
 </html>
