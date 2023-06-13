@@ -1,0 +1,241 @@
+.premium-main{
+    margin-left: 230px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.premium-main *{ 
+    font-family: poppins,arial;
+}
+.premium-title{
+    color:#025C63;
+    font-family: poppins;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.golden-title{
+    background-image:linear-gradient(to right,#A67C00,#FFBF00,#A67C00);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.features-main{
+    display: flex;
+    gap:20px
+}
+.features-card{
+    height: 425px;
+    width: 220px;
+    border-radius: 20px;
+    background-image:linear-gradient(to right,#f2f2f2,#ffffff);
+    padding:30px
+}
+.price{
+    color:#025C63;
+    font-weight: 900;
+    font-size: 40px;
+    margin:0;
+}
+.features-list *{
+    text-align: left;
+    font-size:17px;
+    margin:3px;
+}
+.features-card button{
+    height: 40px;
+    width: 170px;
+    border-radius: 5px;
+    border:#025C63 solid 2px;
+    margin:10px
+}
+.h1-title{
+    align-self: flex-start;
+    margin:50px;    
+}
+.testimonials-outer{
+    display: flex;
+    align-items:center;
+    gap:30px;
+}
+.testimonials{
+    width:270px;
+    background-color: white;
+    border :solid #5FCACC;
+    border-radius: 10px;
+}
+.testimonials:nth-child(2n){
+    transform: translate(0,-30px);
+    box-shadow:4px 4px 20px 0px rgb(178, 178, 178);
+}
+.testimonials-upper{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px 20px;
+}
+.quosvg{
+    align-self: start;
+    display: inline;
+    margin-top:20px;
+}
+.testimonials-lower{
+    background-color: #5FCACC;
+    align-self: baseline;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0A1753;
+}
+.questions-search-bar{
+    width: 600px;
+    height: 50px;
+    border-radius: 40px;
+    border: grey solid 1px;
+}
+.search-questions-input{
+    margin:0;
+    height: inherit;
+    box-shadow:none;
+    background: transparent;
+    font-size: 20px;
+    text-align: left;
+}
+.search-questions-input::placeholder{
+    color:black;
+    text-align: left;
+    font-size: 20px;
+}
+.search-questions-input:focus{
+    box-shadow:none;
+}
+.question{
+    width:500px;
+    padding:15px 40px;
+    background-color: white;
+    text-align: left;
+    margin:20px 20px 0px 20px;  
+    border:#C2C2C2 1px solid;
+    border-radius:10px;
+    font-size:17px; 
+}
+.hide-show-btn{
+    float: right;
+    background: transparent;
+    border:none;
+    margin:5px;
+}
+.question-answer{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.question-heading{
+    display: inline;
+}
+.question-lower{
+    display: none;
+}
+.show-answer{
+    box-shadow: 0 0 15px 1px rgba(128, 128, 128, 0.567);
+}
+.show-answer .question-heading{
+    color: #025C63;
+
+}
+.show-answer .question-lower{
+    display: block;
+}
+
+@media (max-width:1150px){
+    .testimonials-outer{
+        flex-direction: column;
+    }
+    .testimonials:nth-child(2n){
+        transform: translate(0,0);
+    }
+}
+@media only screen and (max-width: 850px) {
+    .navbar {
+        display: none;
+    }
+    .navbar1 {
+        display: inherit;
+        z-index: 100;
+        width: 100%;
+        max-width: 500px;
+    }
+    .logo {
+        margin-left: 15px;
+    }
+    .title {
+        margin-left: 0px;
+    }
+    .product_card {
+        margin-left: -20px;
+    }
+    .ourproducts {
+        margin-left: 20px;
+
+    }
+    .opline {
+        margin-left:20px;
+    }
+    .Upwork {
+      margin-left: 20px;
+    }
+    .upline {
+      margin-left: 20px;
+    }
+    .menu {
+        display: contents;
+    }
+    .title {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .profile {
+        margin-right: 8%;
+    }
+    .propoplex {
+        margin-top: 10px;
+    }
+    form {
+        margin-left: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        width: 90%;
+    }
+    .writenow {
+        margin: auto;
+        margin-left: 0px;
+        margin-top: 15px;
+    }           
+    .premium-main{
+        margin-left: 0;
+        margin-top: 50px;
+    } 
+}
+@media (max-width:600px){
+    .premium-main h1{
+        font-size: 6vw;
+        margin:40px 2vw;
+    }
+    .questions-search-bar{
+        width:90%;
+    }
+    .question{
+        width:80vw;
+        padding:10px 4vw;
+    }
+    .features-main{
+        flex-direction: column;
+    }
+}
